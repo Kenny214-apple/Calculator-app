@@ -1,0 +1,162 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* body */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-size: 28px;
+  background-color: hsl(222, 26%, 31%);
+  font-weight: 700;
+}
+/* Top Designs */
+h3 {
+  color: hsl(240, 14%, 97%);
+  margin-left: 32%;
+  margin-bottom: -5%;
+  display: inline;
+}
+h5 {
+  color: hsl(240, 14%, 97%);
+  margin-left: 60%;
+  margin-bottom: -5%;
+  display: inline;
+}
+h4 {
+  color: hsl(240, 14%, 97%);
+  margin-left: 50%;
+  margin-bottom: -5;
+  display: inline;
+}
+/* main body part container */
+.main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  height: fit-content;
+  margin: auto;
+  width: 375px;
+  margin-top: 100px;
+}
+/* Screen Area */
+.top-area {
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 10px;
+  color: hsl(240, 14%, 97%);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 48px;
+}
+/* End of Screen Area */
+
+/*  KeyPad Area*/
+.all {
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+}
+.bottom-area {
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-auto-rows: minmax(60px, auto);
+}
+.botton {
+  display: flex;
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(222, 26%, 31%);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px hsl(28, 16%, 65%);
+  border-radius: 7px;
+}
+.botton:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    rgba(250, 250, 250, 1),
+    rgba(250, 250, 250, 1),
+    rgba(250, 250, 250, 1)
+  );
+}
+/* Reset button */
+button {
+  color: hsl(30, 25%, 89%);
+  background-color: hsl(225, 21%, 49%);
+  border: none;
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 5px hsl(224, 28%, 35%);
+}
+button:hover,
+.botton-del:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    rgba(250, 250, 250, 0.5),
+    rgba(250, 250, 250, 0.5),
+    rgba(250, 250, 250, 0.5)
+  );
+}
+.button-equal {
+  display: flex;
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(240, 14%, 97%);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px hsl(6, 70%, 34%);
+  border-radius: 7px;
+  margin-right: 0;
+}
+.button-equal:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    rgba(235, 84, 84, 0.9),
+    rgba(235, 84, 84, 0.9),
+    rgba(235, 84, 84, 0.9)
+  );
+}
+.botton-del {
+  display: flex;
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(240, 2%, 92%);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px hsl(224, 28%, 35%);
+  border-radius: 7px;
+}
+/* Reset and Equal Sign attr */
+.big {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(40px, auto);
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    width: 550px;
+  }
+  .bottom-area {
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    padding: 30px;
+  }
+  .big {
+    grid-gap: 15px;
+  }
+  button,
+  .button-equal {
+    height: 50px;
+    width: 245px;
+  }
+}
