@@ -6,6 +6,7 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
 /* body */
 body {
   padding: 0;
@@ -15,6 +16,7 @@ body {
   background-color: hsl(222, 26%, 31%);
   font-weight: 700;
 }
+
 /* Top Designs */
 h3 {
   color: hsl(240, 14%, 97%);
@@ -34,6 +36,7 @@ h4 {
   margin-bottom: -5;
   display: inline;
 }
+
 /* main body part container */
 .main {
   display: grid;
@@ -44,6 +47,7 @@ h4 {
   width: 375px;
   margin-top: 100px;
 }
+
 /* Screen Area */
 .top-area {
   background-color: hsl(224, 36%, 15%);
@@ -53,6 +57,7 @@ h4 {
   box-sizing: border-box;
   text-align: right;
   font-size: 48px;
+  height: 100px;
 }
 /* End of Screen Area */
 
@@ -70,6 +75,9 @@ h4 {
 }
 .botton {
   display: flex;
+  border: none;
+  font-size: 18px;
+  font-weight: bolder;
   background-color: hsl(30, 25%, 89%);
   color: hsl(222, 26%, 31%);
   justify-content: center;
@@ -77,6 +85,28 @@ h4 {
   box-shadow: 0px 5px hsl(28, 16%, 65%);
   border-radius: 7px;
 }
+.arithmetic {
+  display: flex;
+  border: none;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(222, 26%, 31%);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px hsl(28, 16%, 65%);
+  border-radius: 7px;
+}
+
+.arithmetic:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    rgba(250, 250, 250, 1),
+    rgba(250, 250, 250, 1),
+    rgba(250, 250, 250, 1)
+  );
+}
+
 .botton:hover {
   cursor: pointer;
   background: linear-gradient(
@@ -86,16 +116,20 @@ h4 {
   );
 }
 /* Reset button */
-button {
-  color: hsl(30, 25%, 89%);
-  background-color: hsl(225, 21%, 49%);
-  border: none;
-  width: 170px;
+.botton-reset {
+  width: 180px;
   height: 60px;
-  border-radius: 10px;
+  display: flex;
+  border: none;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(240, 2%, 92%);
+  justify-content: center;
+  align-items: center;
   box-shadow: 0px 5px hsl(224, 28%, 35%);
+  border-radius: 7px;
 }
-button:hover,
 .botton-del:hover {
   cursor: pointer;
   background: linear-gradient(
@@ -124,6 +158,9 @@ button:hover,
 }
 .botton-del {
   display: flex;
+  border: none;
+  font-size: 18px;
+  font-weight: bolder;
   background-color: hsl(225, 21%, 49%);
   color: hsl(240, 2%, 92%);
   justify-content: center;
